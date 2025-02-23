@@ -17,10 +17,7 @@ jobs:
     steps:
       - checkout
       - run: python3 main-test.py
-      - store_artifacts:
-        path: /tmp/
-      - store_test_results:
-        path: /test-results/
+
 
 workflows:
   build_and_test:
