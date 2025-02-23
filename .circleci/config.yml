@@ -8,8 +8,6 @@ jobs:
     steps:
       - checkout
       - run: python3 main.py
-    store_artifacts:
-      path: generated_files/
   test:
     working_directory: ~/circleci-python
     docker:
